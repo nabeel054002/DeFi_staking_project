@@ -1,0 +1,81 @@
+we will be using react and useDapp 
+first step is to have create-dapp boiler plate
+npx installed - yes
+yarn install - yes
+enter the following in terminal:
+npx create-react-app {folder_name} --template typescript
+note: we will be using typescript for frontend
+bestpractice:
+have a separate frontend repo for ur project
+
+diving into the front_end folder:
+node_modules: packages, ur pip installs... no need to go into this...
+
+public: has pictures and stuff, we will be dealing with the manifest subsection
+    manifest: tells what our app is and what it does...
+    robots.txt: extra shit, i skipped
+
+we will be dealing heavily in our src/source folder...
+css files are used for formatting and styling...
+we have tsx => typescript files
+
+cd frontend
+then run yarn in the terminal
+that will install all necessary packages
+yarn will install everything present in package.json and store it in node_modules
+
+yarn start... to start frontend setup
+
+to use useDapp
+run following to install it:
+
+our whole thing is to be doen in app.tsx
+
+change the format as per usedapp setup
+
+format it as per the video and then he told to dleete things
+app.css
+app.test.tsx
+logo.svg
+now we will create a component
+    a header component:
+        basically he made a button, and when u click it, u can connect/disconnect, depending upon the status of the cryptowallet connection
+    component = modular parts...
+
+index.tsx is equivalent to int main()
+so he made a component - for the button, the header and imported it into app.tsx which has been imported to the index.tsx file...
+and thats how we deployed the button
+but we want something more aesthetic, so we will be using material ui for the beautification purpose
+
+so we will first install it using a simliar command
+
+yarn add @material-ui/core
+
+we will not be using css files but will work with makestyles instead
+
+we will be using containers...
+
+now we will be takign up info from brownie config to the ui
+
+since we dont have set contracts, and its hard for frontend to act out of src file, we will write a function in deploy script
+this works since both frontend and smart contract bit are in the same repo
+
+since tsx doesnt work well wtih yaml, hence we will convert it to json then do the thign 
+
+
+so learned how to move folders from one place to the other using os and shutil... 
+also learned abt json dump
+
+now making a subcomponent, yourwallet, responsible for getting all the token balances that we have
+
+makestyles is a function and is used to decorate the components...
+likebuttons boxes and etc.
+
+Container is used to centre things \
+<h1> is for heading 
+
+we will be using a tab panel for to display the crypto coins present 
+
+we used a statehook fro 
+
+initally the selected token is mapped onto 0, and then by using an event, we employ the change category
